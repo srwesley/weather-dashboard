@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <!-- Banner-header with the name of the application -->
+    <div id="header-banner" class="container-fluid mt-2 text-center p-2">
+        <h1><strong>Weather Dashboard</strong></h1>
+    </div>
+    <!-- Search section for inputting the city, storing the searched cities names, and an option to clear the searched cities -->
+    <div id="city-search-box" class="container">
+      <div class="row">
+        <div class="col-sm-4 bg-light mt-3">
+          <h4 class="pt-1"><strong>Search for a City:</strong></h4>
+          <div class="input-group mb-3">
+            <input type="text" id="search-city-input" class="form-control" aria-label="City Search" aria-describedby="search-button">
+          </div>
+          <button id="search-city-button" class="btn col-sm-12" type="button">Search</button>
+          <button id="clear-history-button" class="btn mt-3 col-sm-12 collapse" type="button">Clear History</button>
+          <hr class="border border-top border-3 opacity-100">
+          <ul id="searched-cities-list" class="list-group">
+
+          </ul>
+        </div>
+        <!-- Displaying the current weather conditions for the searched and/or selected city -->
+      <div id="current-weather-container" class="col-sm-8 mt-3">
+        <div class="row ml-2 border border-dark rounded">
+          <div id="current-weather" class="col-sm-12">
+            <h3 id="current-city" class="city-name mb-1 mt2 fw-semibold"></h3>
+            <p>Temperature:<span id="temperature" class="current"></span></p>
+            <p>Humidity:<span id="humidity" class="current"></span></p>
+            <p>Wind Speed:<span id="wind-speed" class="current"></span></p>
+          </div>
+        </div>
+        <!-- List of the forecast for the next 5 days of the searched and/or selected city -->
+        <div id="future-weather" class="col-sm-12 mt-3">
+          <h3 class="fw-semibold">5-Day Forecast:</h3>
+          <div class="row text-light d-flex justify-content-evenly">
+            <div class="col-sm-2 forecast text-white ml-2 mb-3 p-2 mt-2">
+              <p id="cityDate1"></p>
+              <p id="cityImg1"></p>
+              <p>Temp:<span id="cityTemp1"></span></p>
+              <p>Humidity:<span id="cityHumidity1"></span></p>
+            </div>
+            <div class="col-sm-2 forecast text-white ml-2 mb-3 p-2 mt-2">
+              <p id="cityDate2"></p>
+              <p id="cityImg2"></p>
+              <p>Temp:<span id="cityTemp2"></span></p>
+              <p>Humidity:<span id="cityHumidity2"></span></p>
+            </div>
+            <div class="col-sm-2 forecast text-white ml-2 mb-3 p-2 mt-2">
+              <p id="cityDate3"></p>
+              <p id="cityImg3"></p>
+              <p>Temp:<span id="cityTemp3"></span></p>
+              <p>Humidity:<span id="cityHumidity3"></span></p>
+            </div>
+            <div class="col-sm-2 forecast text-white ml-2 mb-3 p-2 mt-2">
+              <p id="cityDate4"></p>
+              <p id="cityImg4"></p>
+              <p>Temp:<span id="cityTemp4"></span></p>
+              <p>Humidity:<span id="cityHumidity4"></span></p>
+            </div>
+            <div class="col-sm-2 forecast text-white ml-2 mb-3 p-2 mt-2">
+              <p id="cityDate5"></p>
+              <p id="cityImg5"></p>
+              <p>Temp:<span id="cityTemp5"></span></p>
+              <p>Humidity:<span id="cityHumidity5"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>  
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+  </html>

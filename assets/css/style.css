@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --button-color-bg: rgb(66, 139, 235);
+    --button-color-text: white;
+}
+
+body {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header-banner {
+    background-image: linear-gradient(to right, rgb(57, 90, 180), rgb(4, 4, 49));
+    color: white;
+}
+
+#search-city-button {
+    background-color: var(--button-color-bg);
+    color: var(--button-color-text);
+}
+
+#clear-history-button {
+    background-color: var(--button-color-bg);
+    color: var(--button-color-text)
+}
+
+.forecast {
+    font-size: .9rem;
+    background-color: rgb(38, 58, 77);
+}
+
+span {
+    font-size: 1em;
+}
+
+li:hover {
+  background-color: #5a5a5a;  
+}
